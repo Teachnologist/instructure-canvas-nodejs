@@ -1,0 +1,43 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title>CME-CANVAS</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+<h2>User Courses</h2>
+<h4><a href="/">Home</a></h4>
+<table border="1">
+    <table>
+        <thead>
+        <tr>
+        <th>
+            ID
+        </th>
+            <th>
+                COURSE NAME
+            </th>
+            <th>
+                START DATE
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#courses}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{start_at}}</td>
+        </tr>
+        {{/courses}}
+
+        </tbody>
+
+</table>
+
+</body>
+</html>

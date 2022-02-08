@@ -1,0 +1,50 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title>CME-CANVAS</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+<h2>Accounts</h2>
+<table border="1">
+    <table>
+        <thead>
+        <tr>
+        <th>
+            ID
+        </th>
+            <th>
+                NAME
+            </th>
+            <th>
+                VIEW COURSES (JSON)
+            </th>
+            <th>
+                VIEW USERS (JSON)
+            </th>
+            <th>
+                VIEW USERS (PAGE)
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#accounts}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td><a href="/account/{{id}}/courses">COURSES</a></td>
+            <td><a href="/account/{{id}}/users/">USERS</a></td>
+            <td><a href="/view/account/{{id}}/users/">USER PAGE</a></td>
+        </tr>
+        {{/accounts}}
+
+        </tbody>
+
+</table>
+
+</body>
+</html>
